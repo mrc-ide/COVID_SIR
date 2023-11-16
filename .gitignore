@@ -1,0 +1,5 @@
+# Ignore 'draft' folder
+draft/
+
+# Ignore 'archive' folder
+archive/
