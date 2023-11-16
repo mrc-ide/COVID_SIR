@@ -122,7 +122,7 @@ saveRDS(filter_samples, "outputs/filter_samples.rds")
 ## the number of particle filter iterations
 det_adap_pars <- det_adap_sir_fit$pars
 stoch_pars <- stoch_sir_fit$pars
-n_particles <- 2 ^ c(0:10) #2 ^ c(6:10)
+n_particles <- c(1,192,1024) #2 ^ c(6:10)
 filter_data <- list(NULL)
 
 run_n_particles <- function(n, pars) {
