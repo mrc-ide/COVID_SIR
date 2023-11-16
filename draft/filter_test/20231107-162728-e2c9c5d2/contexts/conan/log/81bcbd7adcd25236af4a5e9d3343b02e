@@ -1,0 +1,55 @@
+  ,:\      /:.
+ //  \_()_/  \\
+||   |    |   ||  CONAN THE LIBRARIAN
+||   |    |   ||  Library:   Z:\Ed\ncov-outputs\src\comparison_sir_filter_test\contexts\lib\windows\4.3
+||   |____|   ||  Bootstrap: T:\conan\bootstrap\4.3
+ \\  / || \  //   Cache:     Z:\Ed\ncov-outputs\src\comparison_sir_filter_test\contexts\conan\cache/pkg
+  `:/  ||  \;'    Policy:    lazy
+       ||         Repos:
+       ||           * https://ncov-ic.github.io/drat
+       XX           * https://cloud.r-project.org
+       XX           * https://mrc-ide.github.io/didehpc-pkgs
+       XX         Packages:
+       XX           * context
+       OO           * sircovid
+       `'           * lubridate
+                    * coda
+                    * tidyr
+                    * viridisLite
+                    * orderly
+                    * vaultr
+                    * readxl
+                    * abind
+                    * here
+                    * mcstate
+                    * dust
+                    * spimalot
+
+ℹ Loading metadata database
+✔ Loading metadata database ... done
+
+Error: 
+! Could not solve package dependencies:
+* sircovid: dependency conflict
+* lubridate: dependency conflict
+* coda: dependency conflict
+* tidyr: dependency conflict
+* viridisLite: dependency conflict
+* orderly: dependency conflict
+* vaultr: dependency conflict
+* readxl: dependency conflict
+* abind: dependency conflict
+* here: dependency conflict
+* mcstate: dependency conflict
+* dust: dependency conflict
+* spimalot: dependency conflict
+* spimalot: Can't install dependency distr6
+* distr6: Can't find package called distr6.
+---
+Backtrace:
+1. global conan_install(.lib, .packages, policy = .policy, repos = .repos)
+2. proposal$stop_for_solution_error()
+3. private$plan$stop_for_solve_error()
+4. pkgdepends:::pkgplan_stop_for_solve_error(self, private)
+5. pkgdepends:::throw(new_error("Could not solve package dependencies:\n", msg, …
+Execution halted
