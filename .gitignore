@@ -3,3 +3,6 @@ draft/
 
 # Ignore 'archive' folder
 archive/
+
+# Ignore '.outpack' folder
+.outpack/
